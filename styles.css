@@ -1,0 +1,1105 @@
+* {
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-ExtraBold.otf") format("opentype");
+  src: url("fonts/Gilroy-Light.otf") format("opentype")
+
+  }
+
+
+.homepageTitle {
+
+
+/* 
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+   */
+  position: absolute;
+  width: auto;
+  height: 46px;
+  left: 580px;
+  top: 50px;
+
+/* display: block;
+width: 100%;
+text-align: center;
+left: 25%;
+top: 220px; */
+
+font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+font-size: px;
+line-height: 46px;
+
+letter-spacing: 0.05em;
+color: #316099;
+
+}
+
+/* #form {
+
+position: absolute;
+width: 988px;
+height: 124px;
+left: 200px;
+top: 418px;
+
+} */
+
+ 
+/* body {
+
+background: rgb(111,165,68);
+background: linear-gradient(90deg, rgba(111,165,68,1) 0%, rgba(111,165,68,1) 5%, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%);
+
+}   */
+
+
+
+/* Question Titles */
+
+#BudgetSliderTitle, #shoeSizeTitle, #preferredColourTitle, #brandsTitle, #styleTitle, #occassionTitle {
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  width: 100%;
+text-align: center;
+  /* identical to box height, or 187% */
+  
+  letter-spacing: 0.04em;
+  
+  /* Blue_01 */
+  
+  color: #1F3F68;
+  opacity: 0.8;
+
+
+
+  
+  }
+
+/* Budget Question Styling */
+
+.BudgetSlider {
+
+position: absolute;
+  width: 1280px;
+  height: 137px;
+  left: 28%;
+  top: 220px;
+  display:inline-block;
+
+}
+
+#left, #right {
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+
+  color: #1F3F68;
+  opacity: 0.8;
+}
+
+.BudgetSlider {
+  width: 50%; /* width of the outside container */
+}
+
+/* The slider itself */
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #2D9CDB; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+
+/* Shoe Size Question Styling Below */
+
+.shoeSize {
+   
+  position: absolute;
+  width: 988px;
+  height: 124px;
+  left: 200px;
+  top: 418px; 
+  
+  
+}
+
+/* Shoe Size - Styling for the text in the checkboxes */
+
+.shoeSize label {
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 200;
+  font-size: px;
+  line-height: 50px;
+  /* or 100% */
+  
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+  
+  opacity: 0.6;
+  
+  }
+
+/* Shoe Size - checkbox button styling below */
+
+  div.q21,  div.q22,  div.q23,  div.q24,  div.q25,  div.q26,  div.q27, div.q31, div.q32 {  
+
+    border: 2px solid #1C7AD0;
+    opacity: 0.6;
+    box-sizing: border-box;
+  
+    line-height:100px;
+    width: 76px;
+    height: 74px;
+
+    border-radius:10px;
+    -webkit-font-smoothing: antialiased; 
+    margin-top:10px;
+
+    font-family:Arial,Helvetica,sans-serif;
+    color:gray;
+    text-align:center;
+
+}
+
+label {
+    display:inline;
+    text-align:center;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input:checked + div {
+    border: solid 1px green;
+    color: green;
+}
+
+input:checked + div:before {
+    content: "\2713";
+}
+
+
+/* Shoe Size - checkbox button positioning below */
+
+div.q21 {
+
+position: absolute;
+width: 76px;
+height: 74px;
+left:  200px;
+top: 25px;
+
+}
+
+
+div.q22 {
+
+position: absolute;
+width: 76px;
+height: 74px;
+left: 354px;
+top: 25px;
+
+}
+
+
+div.q23 {
+
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  left: 506px;
+  top: 25px;
+  
+  
+  }
+
+
+  div.q24 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 658px;
+    top: 25px;
+    
+    
+    }
+  
+
+  div.q25 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 810px;
+    top: 25px;
+    
+    
+    }
+
+
+  div.q26 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left:  962px;
+    top: 25px;
+    
+    
+    }
+
+  div.q27 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 1114px;
+    top: 25px;
+    
+    
+    }
+
+/* Colour Styling Below */
+
+.preferredColour {
+
+ position: absolute;
+  width: 988px;
+  height: 124px;
+  left: 200px;
+  top: 560px;
+
+  display:inline-block;
+vertical-align: middle; 
+
+
+}
+
+/* Styling for the text in the checkboxes */
+
+.preferredColour label {
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 50px;
+  /* or 100% */
+  
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+  
+  opacity: 0.6;
+
+  }
+
+/* Colour - checkbox button styling below */
+
+  div.q31,  div.q32,  div.q33,  div.q34,  div.q35,  div.q36,  div.q37 {  
+
+    border: 2px solid #1C7AD0;
+    opacity: 0.6;
+    box-sizing: border-box;
+  
+    line-height:100px;
+    width: 76px;
+    height: 74px;
+
+    border-radius:10px;
+    -webkit-font-smoothing: antialiased; 
+    margin-top:10px;
+
+    font-family:Arial,Helvetica,sans-serif;
+    color:gray;
+    text-align:center;
+
+}
+
+/* Colour - checkbox button positioning below */
+
+div.q31 {
+
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  left:  200px;
+  top: 25px;
+  
+  }
+  
+  
+  div.q32 {
+  
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  left: 354px;
+  top: 25px;
+  
+  }
+  
+  
+  div.q33 {
+  
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 506px;
+    top: 25px;
+    
+    
+    }
+  
+  
+    div.q34 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left: 658px;
+      top: 25px;
+      
+      
+      }
+    
+  
+    div.q35 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left: 810px;
+      top: 25px;
+      
+      
+      }
+  
+  
+    div.q36 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left:  962px;
+      top: 25px;
+      
+      
+      }
+  
+    div.q37 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left: 1114px;
+      top: 25px;
+      
+      
+      }
+
+
+
+
+
+/* Occassion Styling Below */
+
+.occassion {
+
+  position: absolute;
+  width: 988px;
+  height: 124px;
+  left: 190px;
+  top: 720px;
+}
+
+.occassionTitle {
+
+font-family: Gilroy;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 5px;
+  line-height: 30px;
+  width: 100%;
+  /* identical to box height, or 187% */
+  
+  letter-spacing: 0.04em;
+  
+  /* Blue_01 */
+  
+  color: #1F3F68;
+  opacity: 0.8;
+
+  
+}
+
+
+/* Styling for the text in the checkboxes */
+
+.occassion label {
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 50px;
+  /* or 100% */
+  
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+  
+  opacity: 0.6;
+  
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+  
+  opacity: 0.6;
+   
+  }
+
+
+
+    /*  */
+/* 
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 50px;
+  /* or 100% */
+
+
+
+/* Occassion - checkbox button styling below */
+
+div.q41,  div.q42,  div.q43 {  
+
+  border: 2px solid #1C7AD0;
+  opacity: 0.6;
+  box-sizing: border-box;
+
+  line-height:35px;
+  width: 76px;
+  height: 74px;
+
+  border-radius: 10px;
+  -webkit-font-smoothing: antialiased; 
+  margin-top: 5px;
+
+  font-family:Arial,Helvetica,sans-serif;
+  color:gray;
+  text-align:center;
+
+}
+
+/* Occassion - checkbox button positioning below */
+
+div.q41 {
+  
+  position: absolute;
+  width: 304px;
+  height: 49px;
+  left:  200px;
+  top: 0;
+  
+  
+  }
+
+
+div.q42 {
+
+  position: absolute;
+  width: 304px;
+  height: 49px;
+  left: 553px;
+  top: 0;
+  
+  }
+
+div.q43 {
+
+  position: absolute;
+  width: 311px;
+  height: 49px;
+  left: 934px;
+  top: 0;
+}
+
+
+ /* Brands Question Styling Below */
+
+.Brands {
+
+  position: absolute;
+  width: 988px;
+  height: 124px;
+  left: 200px;
+  top: 840px;
+
+
+}
+
+
+/* Styling for the text in the checkboxes */
+
+.Brands label {
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 50px;
+  /* or 100% */
+  
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+  
+  opacity: 0.6;
+
+  }
+
+
+/* Brands - checkbox button styling below */
+
+
+div.q51,  div.q52,  div.q53,  div.q54,  div.q55,  div.q56,  div.q57 {  
+
+  border: 2px solid #1C7AD0;
+  opacity: 0.6;
+  box-sizing: border-box;
+
+  line-height:100px;
+  width: 76px;
+  height: 74px;
+
+  border-radius:10px;
+  -webkit-font-smoothing: antialiased; 
+  margin-top:10px;
+
+  font-family:Arial,Helvetica,sans-serif;
+  color:gray;
+  text-align:center;
+
+}
+
+ /* Brands - checkbox button positioning below */
+
+
+div.q51 {
+
+position: absolute;
+width: 76px;
+height: 74px;
+left:  200px;
+top: 25px;
+
+}
+
+
+div.q52 {
+
+position: absolute;
+width: 76px;
+height: 74px;
+left: 354px;
+top: 25px;
+
+}
+
+
+div.q53 {
+
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  left: 506px;
+  top: 25px;
+  
+  
+  }
+
+
+  div.q54 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 658px;
+    top: 25px;
+    
+    
+    }
+  
+
+  div.q55 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 810px;
+    top: 25px;
+    
+    
+    }
+
+
+  div.q56 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left:  962px;
+    top: 25px;
+    
+    
+    }
+
+  div.q57 {
+
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 1114px;
+    top: 25px;
+    
+    
+    }
+
+
+
+.Style {
+
+ 
+position: absolute;
+width: 1036px;
+height: 276px;
+left: 200px;
+top: 980px;
+
+
+}
+
+
+/* Styling for the text in the checkboxes */
+
+
+.Style label {
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 10px;
+  line-height: 50px;
+  /* or 100% */
+  
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+  
+  opacity: 0.6;
+  
+  }
+  
+
+  /* Style - checkbox button styling below */
+
+  div.q61,  div.q62,  div.q63,  div.q64,  div.q65,  div.q66,  div.q67 {  
+
+    border: 2px solid #1C7AD0;
+    opacity: 0.6;
+    box-sizing: border-box;
+  
+    line-height:100px;
+    width: 76px;
+    height: 74px;
+  
+    border-radius:10px;
+    -webkit-font-smoothing: antialiased; 
+    margin-top:10px;
+  
+    font-family:Arial,Helvetica,sans-serif;
+    color:gray;
+    text-align:center;
+  
+  }
+  
+  /* Style - checkbox button positioning below */
+
+  
+  div.q61 {
+  
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  left:  200px;
+  top: 25px;
+  
+  }
+  
+  
+  div.q62 {
+  
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  left: 354px;
+  top: 25px;
+  
+  }
+  
+  
+  div.q63 {
+  
+    position: absolute;
+    width: 76px;
+    height: 74px;
+    left: 506px;
+    top: 25px;
+    
+    
+    }
+  
+  
+    div.q64 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left: 658px;
+      top: 25px;
+      
+      
+      }
+    
+  
+    div.q65 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left: 810px;
+      top: 25px;
+      
+      
+      }
+  
+  
+    div.q66 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left:  962px;
+      top: 25px;
+      
+      
+      }
+  
+    div.q67 {
+  
+      position: absolute;
+      width: 76px;
+      height: 74px;
+      left: 1114px;
+      top: 25px;
+      
+      
+      }
+
+
+
+.SubmitButton {
+
+-webkit-appearance: none;
+position: absolute;
+width: auto:
+height: 26px;
+left: 45%;
+top: 1220px;
+
+font-family: Gilroy;
+font-size: 16px;
+line-height: 26px;
+
+box-shadow: 5px 10px 20px rgba(16, 112, 177, 0.2);
+text-align: center;
+letter-spacing: 0.04em;
+padding: 10px;
+margin: 10px;
+
+
+}
+
+
+
+/* Navigation Bar*/
+
+  
+    ul {
+
+      font-family: "Gilroy";
+      list-style-type: none;
+      margin : 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    li {
+      font-family: "Gilroy";
+      float: right;
+      list-style-type: none;
+    }
+    
+    li a {
+      font-family: "Gilroy";
+      display: block;
+      color: #22356F;;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    /* Change the link color to blue on hover */
+   
+  a:hover {
+      text-decoration: underline;
+
+      }
+
+   
+    
+    
+/* Contact Us Pages */
+
+h1 {
+
+      position: absolute;
+      width: auto;
+      height: 46px;
+      left: 700px;
+      top: 50px;
+    
+    
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: px;
+    line-height: 46px;
+    
+    letter-spacing: 0.05em;
+    color: #316099;
+    
+    }
+  
+
+/* Contact Us Page */
+
+ #contact {
+ 
+font-family: "Gilroy";
+margin: 0 auto;
+position: absolute;
+width: 90px;
+height: 11px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+position: relative;
+width: 1366px;
+height: 2777px;
+
+background: #FFFFFF;
+ 
+ }
+
+/* About Us Page */
+
+
+    .body {
+      font-family: "Gilroy";
+      margin: 0;
+      font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+line-height: 46px;
+
+letter-spacing: 0.05em;
+    }
+
+    .html {
+      font-family: "Gilroy";
+      box-sizing: border-box;
+      font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+line-height: 46px;
+
+letter-spacing: 0.05em;
+    }
+
+    *, *:before, *:after {
+      font-family: "Gilroy";
+      box-sizing: inherit;
+      font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+line-height: 46px;
+
+letter-spacing: 0.05em;
+    }
+
+    .column {
+      float: center;
+      width: 50%;
+      margin-bottom: 8px;
+      padding: 0 8px;
+      font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+font-size: px;
+line-height: 46px;
+
+letter-spacing: 0.05em;
+    }
+
+    .card {
+      font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+font-size: px;
+line-height: 46px;
+
+letter-spacing: 0.05em;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 25px;
+    }
+
+    .about-section {
+      font-family: "Gilroy";
+      font-family: Gilroy;
+font-style: normal;
+font-weight: 300;
+font-size: px;
+line-height: 46px;
+
+letter-spacing: 0.05em;
+      padding: 50px;
+      text-align: center;
+      color: #316099
+    }
+
+    .container {
+      font-family: "Gilroy";
+      padding: 0 8px;
+    }
+
+    .container::after, .row::after {
+      font-family: "Gilroy";
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      top: 50px;
+      font-family: "Gilroy";
+      color: #316099;
+    }
+
+    .card-container {
+      font-family: "Gilroy";
+      padding: 10px;
+    }
+
+    .contact-label {
+      display: block;
+      text-align: center;
+    }
+
+    .contact-input {
+      font-family: "Gilroy";
+      margin-bottom: 20px;
+    }
+
+    .button {
+      font-family: "Gilroy";
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 6px;
+      color: white;
+      background-color:#316099;
+      text-align: center;
+      cursor: pointer;
+      width: 98%;
+    }
+
+    .button:hover {
+      font-family: "Gilroy";
+      background-color: #22356F;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
